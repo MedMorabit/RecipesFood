@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:id="@+id/linear01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/alata"
+            android:text="HOME"
+            android:textColor="@color/Primary"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/linear01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/first_qst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What would you like to eat?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/card_image"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_4sdp">
+
+                <ImageView
+                    android:id="@+id/image_main"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                  >
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_items_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="sans-serif"
+                android:text="Popular items"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recycler_items"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:orientation="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_categories_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="sans-serif"
+                android:text="Categories"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="@dimen/_6sdp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginEnd="@dimen/_8sdp"
+               android:layout_marginStart="@dimen/_8sdp"
+               app:cardElevation="@dimen/_3sdp"
+               android:padding="@dimen/_6sdp"
+               app:cardCornerRadius="@dimen/_6sdp"
+               android:layout_marginBottom="@dimen/_6sdp"
+               android:scrollbars="none">
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:padding="@dimen/_4sdp"
+                   android:id="@+id/recycler_categories"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:layout_height="match_parent">
+
+               </androidx.recyclerview.widget.RecyclerView>
+           </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

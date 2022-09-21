@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_140sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:id="@+id/card_category"
+    android:elevation="@dimen/_4sdp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="@dimen/_160sdp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@color/Primary"
+        android:layout_weight="3"
+        android:id="@+id/image_all_category"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tv_all_category"
+        android:padding="@dimen/_6sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Beef">
+
+    </TextView>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
