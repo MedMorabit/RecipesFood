@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.allRecipes.R
 import com.example.allRecipes.adapter.CategoriesFragmentAdapter
 import com.example.allRecipes.mvvm.HomeViewModel
 import com.example.allRecipes.ui.MainActivity
-import com.example.recipesfood.R
 import kotlinx.android.synthetic.main.fragment_categories.*
 
 class CategoriesFragment : Fragment() {
-lateinit var categoryFragmentAdapter:CategoriesFragmentAdapter
+private lateinit var categoryFragmentAdapter:CategoriesFragmentAdapter
 lateinit var viewModel:HomeViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

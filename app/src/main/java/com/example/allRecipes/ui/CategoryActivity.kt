@@ -1,5 +1,6 @@
 package com.example.allRecipes.ui
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -28,6 +29,7 @@ class CategoryActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun setRecyclerAdapter() {
      categoryByMealAdapter= CategoryByMealAdapter()
 

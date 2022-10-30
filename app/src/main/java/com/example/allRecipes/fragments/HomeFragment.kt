@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.example.allRecipes.R
 import com.example.allRecipes.adapter.CategoryAdapter
 import com.example.allRecipes.adapter.MostPopularAdapter
 import com.example.allRecipes.adapter.myOnItemLongClick
@@ -20,7 +21,6 @@ import com.example.allRecipes.mvvm.HomeViewModel
 import com.example.allRecipes.ui.CategoryActivity
 import com.example.allRecipes.ui.MainActivity
 import com.example.allRecipes.ui.MealActivity
-import com.example.recipesfood.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 

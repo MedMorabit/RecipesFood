@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.allRecipes.R
 import com.example.allRecipes.db.MealDatabase
 import com.example.allRecipes.fragments.CategoriesFragment
 import com.example.allRecipes.fragments.FavoriteFragment
 import com.example.allRecipes.fragments.HomeFragment
 import com.example.allRecipes.mvvm.HomeViewModel
 import com.example.allRecipes.mvvm.HomeViewProviderFactory
-import com.example.recipesfood.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

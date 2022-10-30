@@ -5,8 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.allRecipes.R
 import com.example.allRecipes.models.Category
-import com.example.recipesfood.R
+
 import kotlinx.android.synthetic.main.category_item.view.*
 
 class CategoryAdapter(var listener:OnclickItemCategory) : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
